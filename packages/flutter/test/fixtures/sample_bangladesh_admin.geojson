@@ -1,0 +1,24 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Dhaka Division",
+        "level": "division"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [90.00, 23.40],
+            [90.70, 23.40],
+            [90.70, 24.20],
+            [90.00, 24.20],
+            [90.00, 23.40]
+          ]
+        ]
+      }
+    }
+  ]
+}

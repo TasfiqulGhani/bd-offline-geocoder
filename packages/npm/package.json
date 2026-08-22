@@ -1,0 +1,52 @@
+{
+  "name": "bd-offline-geocoder",
+  "version": "0.1.1",
+  "description": "Offline Bangladesh reverse geocoder. Convert GPS coordinates to division, district, upazila, union, and ward with no API key and no network.",
+  "license": "MIT",
+  "author": "Tasfiqul Ghani",
+  "type": "module",
+  "main": "./src/index.js",
+  "types": "./src/index.d.ts",
+  "files": [
+    "src",
+    "data/boundaries",
+    "data/roads",
+    "data/addresses",
+    "data/postcodes",
+    "README.md",
+    "LICENSE",
+    "THIRD_PARTY_NOTICES.md"
+  ],
+  "keywords": [
+    "bangladesh",
+    "reverse-geocoder",
+    "offline-geocoder",
+    "geocoding",
+    "geojson",
+    "division",
+    "district",
+    "upazila",
+    "union",
+    "ward",
+    "gps",
+    "maps",
+    "gis"
+  ],
+  "homepage": "https://github.com/TasfiqulGhani/bd-offline-geocoder#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TasfiqulGhani/bd-offline-geocoder.git",
+    "directory": "packages/npm"
+  },
+  "bugs": {
+    "url": "https://github.com/TasfiqulGhani/bd-offline-geocoder/issues"
+  },
+  "scripts": {
+    "example": "node ../../examples/npm/basic-lookup.js",
+    "test": "node --test",
+    "pack:dry-run": "npm pack --dry-run"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

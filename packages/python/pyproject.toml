@@ -1,0 +1,70 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "bd-offline-geocoder"
+version = "0.1.1"
+description = "Offline Bangladesh reverse geocoder. Convert GPS coordinates to division, district, upazila, union, and ward with no API key and no network."
+readme = "README.md"
+requires-python = ">=3.9"
+license = "MIT"
+authors = [
+  { name = "Tasfiqul Ghani", email = "tasfiqulghani@gmail.com" }
+]
+keywords = [
+  "bangladesh",
+  "reverse-geocoder",
+  "offline-geocoder",
+  "geocoding",
+  "geojson",
+  "division",
+  "district",
+  "upazila",
+  "union",
+  "ward",
+  "gis",
+]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Intended Audience :: Developers",
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3 :: Only",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: 3.13",
+  "Topic :: Scientific/Engineering :: GIS",
+  "Topic :: Software Development :: Libraries :: Python Modules",
+  "Typing :: Typed",
+]
+
+[project.urls]
+Homepage = "https://github.com/TasfiqulGhani/bd-offline-geocoder"
+Repository = "https://github.com/TasfiqulGhani/bd-offline-geocoder"
+Issues = "https://github.com/TasfiqulGhani/bd-offline-geocoder/issues"
+Documentation = "https://github.com/TasfiqulGhani/bd-offline-geocoder#readme"
+Changelog = "https://github.com/TasfiqulGhani/bd-offline-geocoder/blob/main/CHANGELOG.md"
+
+[project.optional-dependencies]
+test = ["pytest>=8"]
+publish = ["build>=1.0", "twine>=6.0"]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/bd_offline_geocoder"]
+
+[tool.hatch.build.targets.sdist]
+include = [
+  "/src",
+  "/tests",
+  "/README.md",
+  "/LICENSE",
+  "/THIRD_PARTY_NOTICES.md",
+  "/pyproject.toml",
+]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]

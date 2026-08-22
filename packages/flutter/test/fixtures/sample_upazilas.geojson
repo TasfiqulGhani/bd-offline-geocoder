@@ -1,0 +1,44 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Tejgaon",
+        "level": "upazila"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [90.37, 23.73],
+            [90.43, 23.73],
+            [90.43, 23.79],
+            [90.37, 23.79],
+            [90.37, 23.73]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Mohammadpur Thana",
+        "level": "upazila",
+        "note": "Sample demo boundary, not authoritative"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [90.330, 23.745],
+            [90.370, 23.745],
+            [90.370, 23.790],
+            [90.330, 23.790],
+            [90.330, 23.745]
+          ]
+        ]
+      }
+    }
+  ]
+}

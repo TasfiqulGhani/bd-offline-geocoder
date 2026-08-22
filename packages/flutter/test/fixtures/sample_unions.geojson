@@ -1,0 +1,25 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Ward 29",
+        "level": "ward",
+        "note": "Sample demo boundary, not authoritative"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [90.345, 23.760],
+            [90.365, 23.760],
+            [90.365, 23.780],
+            [90.345, 23.780],
+            [90.345, 23.760]
+          ]
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+name: bd_offline_geocoder
+description: >-
+  Offline reverse geocoder for Bangladesh. Convert GPS coordinates to division,
+  district, upazila, union, and ward without Google Maps or any network call.
+version: 0.1.2
+homepage: https://github.com/TasfiqulGhani/bd-offline-geocoder
+repository: https://github.com/TasfiqulGhani/bd-offline-geocoder
+issue_tracker: https://github.com/TasfiqulGhani/bd-offline-geocoder/issues
+documentation: https://github.com/TasfiqulGhani/bd-offline-geocoder#readme
+license: MIT
+topics:
+  - bangladesh
+  - geocoder
+  - geojson
+  - offline
+  - maps
+
+environment:
+  sdk: ^3.4.0
+  flutter: '>=3.16.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+dev_dependencies:
+  flutter_lints: ^4.0.0
+  flutter_test:
+    sdk: flutter
+  test: ^1.25.0
+
+flutter:
+  assets:
+    - assets/boundaries/bgd_admin1.geojson
+    - assets/boundaries/bgd_admin2.geojson
+    - assets/boundaries/bgd_admin3.geojson
+    - assets/boundaries/bgd_admin4_simplified.geojson
+    - assets/roads/dhaka_named_roads.geojson
+    - assets/addresses/dhaka_address_points.geojson
